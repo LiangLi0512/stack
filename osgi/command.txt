@@ -1,0 +1,2 @@
+// run osgi platform console
+java -jar -Dosgi.console.enable.builtin=true org.eclipse.osgi_3.9.1.v20140110-1610.jar -console
