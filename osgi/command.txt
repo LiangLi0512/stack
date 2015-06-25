@@ -1,2 +1,7 @@
 // run osgi platform console
 java -jar -Dosgi.console.enable.builtin=true org.eclipse.osgi_3.9.1.v20140110-1610.jar -console
+osgi> install file:xxxxxxx
+
+// run osgi platform using latest version
+// http://devblog.virtage.com/2012/08/osgi-with-equinox-for-beginners-overview/
+java -Dosgi.bundles=org.eclipse.equinox.console_1.0.100.v20130429-0953.jar@start,org.apache.felix.gogo.command_0.10.0.v201209301215.jar@start,org.apache.felix.gogo.runtime_0.10.0.v201209301036.jar@start,org.apache.felix.gogo.shell_0.10.0.v201212101605.jar -jar org.eclipse.osgi_3.9.1.v20140110-1610.jar -console
